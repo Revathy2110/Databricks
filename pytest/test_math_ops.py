@@ -1,8 +1,6 @@
 import unittest
 from math_ops import add, subtract, multiply, divide
 
-# class name TestMathOperations
-# method names test_methodname
 class TestMathOperations(unittest.TestCase):
     def test_add_positive_numbers(self):
         self.assertEqual(add(1, 2), 3)
