@@ -100,6 +100,8 @@ display(mergeDF)
 # COMMAND ----------
 
 dummyDF = filterDF.filter("target_pk1 is not null").withColumn("MERGEKEY",lit(None))
+display(dummyDF)
+
 
 # COMMAND ----------
 
@@ -130,6 +132,7 @@ targetTable.alias("target").merge(
     }
 
 ).execute()
+
 
 # COMMAND ----------
 
